@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="_img/favicon.svg">
+	<link rel="icon" href="favicon.svg">
 
-	<link href="_css/style.css" type="text/css" rel="stylesheet" />
+	<link href="style.css" type="text/css" rel="stylesheet" />
 
-	<link href="_css/grid-layout.css" type="text/css"  rel="stylesheet" />
+	<link href="grid-layout.css" type="text/css"  rel="stylesheet" />
 
 	<title>SpaceX dashboard</title>
 </head>
@@ -20,7 +20,7 @@
 		<header>
 			<!-- logo SpaceX -->
 			<figure>
-				<img src="_img/logo.png" alt="SpaceX logo">
+				<img src="logo.png" alt="SpaceX logo">
 			</figure>
 		</header>
 		<!-- - - - - - - - - - - - - - - - - - -
@@ -35,13 +35,11 @@
 				<!-- data 1 -->
 				<section class="data1">
 					<h2>Brandstof verbruik (%)</h2>
-
 					<section class="flexContainer">
 						<!-- cirkeldiagram -->
 						<div class="data1Box">
 							<canvas id="cirkeldiagram"></canvas>
 						</div>
-
 						<!-- legenda -->
 						<div class="legenda">
 							<div class="verbruikt">
@@ -51,7 +49,7 @@
 									<p>10.3%</p>
 								</div>
 							</div>
-
+							
 							<div class="resterend">
 								<span class="grijs"></span>
 								<div class="legendaBeschrijving">
@@ -62,11 +60,23 @@
 						</div>
 					</section>
 				</section>
+
+				<!-- data 2 -->
 				<section class="data2">
 					<h2>Voorraden (%)</h2>
+					<!-- staafdiagram -->
+					<div class="data2Box">
+						<canvas id="staafdiagram"></canvas>
+					</div>
 				</section>
+
+				<!-- data 3 -->
 				<section class="data3">
 					<h2>Acceleratie (afstand in km)</h2>
+					<!-- lijndiagram -->
+					<div class="data3Box">
+						<canvas id="lijndiagram"></canvas>
+					</div>
 				</section>				
 			</section>
 		</section>
@@ -74,6 +84,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 
-	<script src="_js/script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

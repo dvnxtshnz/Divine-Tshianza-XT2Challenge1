@@ -84,11 +84,23 @@ img { /* SpaceX logo in het midden centreren */
 	background-color: #E5E6EF;
 }
 
+.data2Box, .data3Box { /* conatainer staafdiagram van data 2 en 
+lijndiagram van data 3 */
+	width: 80%;
+	margin: auto;
+	padding-top: 25px
+}
+
+#staafdiagram, #lijndiagram { /* hoogte staafdiagram en lijndiagram */
+	height: 200px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - -
 :: Tablet (768PX and up)
 - - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 768px) {
-	.flexContainer { /* breedte container data 1 met legenda ernaast */
+	.flexContainer { /* breedte container data 1 waarin cikrldiagram 
+	en legenda naast elkaar staan */
 		width: 500px;
 		margin: auto;
 	}
@@ -98,7 +110,7 @@ img { /* SpaceX logo in het midden centreren */
 :: Desktop (1200PX and up)
 - - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 1200px) {
-	.flexContainer { /* breedte container data 1 met legenda ernaast */
+	.flexContainer {
 		width: 400px;
 		margin: auto;
 	}
