@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+body {
+	background-color: #F7F8FA;
+	font-family: 'Ubuntu', sans-serif;
+	color: #474862;
+}
+
+h1 {
+	font-size:  1.6rem;
+}
+
+h2, h3 {
+	font-size:  1rem;
+}
+
+h3 {
+	color: #9D9EA4;
+	font-weight: 300;
+	line-height: 0.3;
+}
+
+header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+img { /* SpaceX logo in het midden centreren */
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.hoofdcontent { /* hoofdcontent in het midden centreren */
+	width: 80%;
+	margin: auto;
+}
+
+.dataVisualisaties {
+	margin-top: 50px;
+	margin-bottom: 15%;
+}
+
+.data1, .data2, .data3 { /* witte boxen om data visualisaties */
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 10px 25px rgba(149, 157, 165, 0.2);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 25px;
+}
+
+.data1, .data2, .data3 h2 { /* data titels centreren */
+	text-align: center;
+}
+
+.data1Box { /* container cirkeldiagram van data 1 */
+	width: 190px;
+	height: 190px;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.legenda { /* legenda data 1 in het midden van witte box centereren */
+	width: 100px;
+	margin: auto;
+}
+
+.blauw,.grijs { /* gekleurde cirkels in legenda */
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.blauw {
+	background-color: #583BFD;
+}
+
+.grijs {
+	background-color: #E5E6EF;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Tablet (768PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 768px) {
+	.flexContainer { /* breedte container data 1 met legenda ernaast */
+		width: 500px;
+		margin: auto;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Desktop (1200PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 1200px) {
+	.flexContainer { /* breedte container data 1 met legenda ernaast */
+		width: 400px;
+		margin: auto;
+	}
+}

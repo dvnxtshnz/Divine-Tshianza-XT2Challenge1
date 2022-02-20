@@ -1,0 +1,83 @@
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"header"
+	"main"
+}
+
+.header {
+	grid-area: header;
+}
+
+.hoofdcontent {
+	grid-area: main;
+}
+
+.dataVisualisaties {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"dataVisualisatie1"
+	"dataVisualisatie2"
+	"dataVisualisatie3"
+}
+
+.data1 {
+	grid-area: dataVisualisatie1;
+}
+
+.data2 {
+	grid-area: dataVisualisatie2;
+}
+
+.data3{
+	grid-area: dataVisualisatie3;
+}
+
+.verbruikt, .resterend { /* gekleurde cirkels en legenda beschrijving naast elkaar */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Tablet / Potrait mode (768PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 768px) {
+	.flexContainer { /* staafdiagram data 1 en legenda naast elkaar */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Tablet / Landscape mode (1024PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 1024px) {
+	.dataVisualisaties {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 25px;
+		grid-template-areas:
+		"dataVisualisatie1 dataVisualisatie2"
+		"dataVisualisatie3 dataVisualisatie3";
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+:: Desktop (1200PX and up)
+- - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 1200px) {
+	.dataVisualisaties {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 25px;
+		grid-template-areas:
+		"dataVisualisatie1 dataVisualisatie2 dataVisualisatie3";
+	}
+}
